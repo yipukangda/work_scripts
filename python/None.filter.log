@@ -1,0 +1,27 @@
+***************************** PARAMS ****************************
+    DBSNP Database file: 
+    Max cov to assemble: 100
+    Error correction mode: f
+    Subsample-rate for correction learning: 0.500000
+    ErrorRate: EXACT (0)
+    Num assembly rounds: 3
+    Num reads to sample: 2000000
+    Discordant read extract SD cutoff:  3.92
+    Discordant cluster std-dev cutoff:  3.92
+    Minimum number of reads for mate lookup 3
+    LOD cutoff (non-REF):            8
+    LOD cutoff (non-REF, at DBSNP):  6
+    LOD somatic cutoff:              6
+    LOD somatic cutoff (at DBSNP):   10
+    BWA-MEM params:
+      Gap open penalty: 32
+      Gap extension penalty: 1
+      Mismatch penalty: 18
+      Aligment bandwidth: 1000
+      Z-dropoff: 100
+      Clip 3 penalty: 5
+      Clip 5 penalty: 5
+      Reseed trigger: 1.5
+      Sequence match score: 2
+*****************************************************************
+
