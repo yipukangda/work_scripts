@@ -38,9 +38,9 @@ class sv_tools:
                     samtools view -b -f 12 -F 256 {b} > {o}{n}.tmps3.bam'\
                     .format(**mapping))
         os.system('rm {o}{n}.splitters.unsorted.bam {o}{n}.discordants.unsorted.bam && \
-                   picard MergeSamFiles I={o}{n}.discordants.bam I={o}{n}.splitters.bam I={o}{n}.tmps1.bam I={o}{n}.tmps2.bam I={o}{n}.tmps2.bam\
+                   picard MergeSamFiles I={o}{n}.discordants.bam I={o}{n}.splitters.bam I={o}{n}.tmps1.bam I={o}{n}.tmps2.bam I={o}{n}.tmps3.bam\
                    O={o}{n}.sv.bam && \
-                   rm {o}{n}.splitters.bam {o}{n}.discordants.bam && samtools index {o}{n}.sv.bam'\
+                   rm {o}{n}.splitters.bam {o}{n}.discordants.bam {o}{n}.tmps*.bam && samtools index {o}{n}.sv.bam'\
                    .format(**mapping))
 
     def svaba(self, out_dir, ref, t, bed=''):
